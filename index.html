@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Minun sivut</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header>
+    <h1 class="otsikko">FKH</h1>
+    <div class="navbar">
+       <div class="logo"><a href="index.html">Etusivu</a></div>
+        <ul class="links">
+            <li><a href="index.html">Koti</a></li>
+            <li><a href="mina.html">Kuvia</a></li>
+        </ul> 
+        <a href="contact.html" class="action_btn">Ota yhteyttä</a>
+        <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+    <div class="dropdown_menu">
+        <ul>
+            <li><a href="index.html">Etusivu</a></li>
+            <li><a href="mina.html">Minä</a></li>
+            <li><a href="contact.html" class="action_btn">Ota yhteyttä</a></li>
+        </ul>
+    </div>
+   </header>
+   <hr>
+
+   <div class="main-content">
+        <div class="section">
+            <h2>Kimi Häkkinen</h2>
+            <br>
+            <p>Fat Kimi Häkkinen on mies, jonka seikkailut vievät hänet paikkoihin, joita harva olisi voinut kuvitella. Hänen uskomaton tarinansa alkoi pienen kylän laidalla, missä hän syntyi suuren kokoisena ja vielä suuremmalla sydämellä.
+
+                Kimi ei ollut tyytyväinen pelkkään leipomiseen tai ravintola-alan menestykseen. Hän etsi jatkuvasti uusia seikkailuja ja kokemuksia. Eräänä päivänä, hän päätti ottaa osaa ekspeditioon syvälle metsän sydämeen, jossa asusti legendaarisia karhuja.
+                
+                Uskomattomalla rohkeudellaan ja rauhallisella luonteellaan Kimi voitti pian karhujen luottamuksen. Hän oppi kommunikoimaan niiden kanssa ja jakamaan niiden elämää vuorilla ja metsissä. Monet olisivat pelänneet karhujen kohtaamista, mutta Fat Kimi Häkkinen näki niissä vain ystäviä.
+                
+                Mutta Kimin seikkailut eivät rajoittuneet vain karhujen kanssa oleiluun. Eräänä päivänä hän päätti lähteä kaupunkiin auttamaan rikoksia vastaan taistelevaa supersankaria. Hän omaksui salaperäisen identiteetin ja pukeutui Fat Kimi Häkkisen sijaan Bätmaniksi.
+                
+                Bätmanina hän käytti voimiaan ja älyään taistellessaan rikollisuutta vastaan, mutta hän ei koskaan unohtanut ystävyyttään karhujen kanssa. Jotkut saattoivat pitää häntä oudona, mutta monien mielestä Bätmanin ja karhujen yhteistyö oli uskomaton näky.
+                
+                Kun Fat Kimi Häkkinen ei ollut seikkailemassa metsissä tai taistelemassa rikollisuutta vastaan, hän vietti aikaansa eläintarhassa. Siellä hän työskenteli eläinten hyväksi ja soitti kitaraa, rauhoittaen levottomia eläimiä musiikillaan.
+                
+                Lopulta, kun päivä vaihtui yöksi ja tähdet kimmelsivät taivaalla, Fat Kimi Häkkinen istui tulen äärellä karhujensa kanssa, kitara kädessään. He lauloivat yhdessä vanhoja lauluja ja kuuntelivat luonnon ääniä ympärillään. Ja siinä hetkessä, hän tiesi, että hänen seikkailunsa olivat vasta alkaneet. </p>
+            <div class="article">
+                <h3>Tästä</h3>
+                <br>
+                <p>Tämä nettisivu kertoo kuviteellisesta hahmosta nimeltä Kimi Häkkinen</p>
+            </div>
+        </div>
+
+        <div class="aside">
+            <img class="kuva" src="image.png" alt="kuva">
+        </div>
+    </div>
+
+    <div class="social">
+        <div class="icon facebook">
+            <div class="tooltip">Facebook</div>
+            <span><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></span>
+        </div>
+        <div class="icon linkedin">
+            <div class="tooltip">Linkedin</div>
+            <span><a href="https://www.linkedin.com/feed/" target="_blank"><i class="fab fa-linkedin-in"></i></a></span>
+        </div>
+        <div class="icon instagram">
+            <div class="tooltip">Instagram</div>
+            <span><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></span>
+        </div>
+        <div class="icon github">
+            <div class="tooltip">Github</div>
+            <span><a href="https://github.com/peetu92" target="_blank"><i class="fab fa-github"></i></a></span>
+        </div>
+        <div class="icon youtube">
+            <div class="tooltip">YouTube</div>
+            <span><a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a></span>
+        </div>
+    </div>
+    <footer>
+        <p>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px"
+                    src="http://jigsaw.w3.org/css-validator/images/vcss"
+                    alt="Valid CSS!" />
+            </a>
+        </p>
+    </footer>
+
+    
+
+
+    
+  
+   <script>
+    const toggleBtn = document.querySelector(".toggle_btn")
+    const toggleBtnIcon = document.querySelector(".toggle_btn i")
+    const dropDownMenu = document.querySelector(".dropdown_menu")
+
+    toggleBtn.onclick = function() {
+        dropDownMenu.classList.toggle("open")
+        const isOpen = dropDownMenu.classList.contains("open")
+
+        toggleBtnIcon.classList = isOpen
+        ? "fa-solid fa-xmark"
+        : "fa-solid fa-bars"
+    }
+   </script>
+
+</body>
+</html>
