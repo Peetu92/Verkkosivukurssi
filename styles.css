@@ -31,16 +31,3 @@ img {
 img:hover {
     transform: scale(1.1);
 }
-
-.carousel-item {
-    transition: opacity 1s;
-}
-
-.carousel-item .active {
-    opacity: 1;
-}
-
-.carousel-item .next {
-    opacity: 0;
-    transition: opacity 1s;
-}
